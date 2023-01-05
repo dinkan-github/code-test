@@ -1,0 +1,46 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W605" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="httpx._exceptions.HTTPError.response" />
+          <option value="httpx._exceptions.HTTPError.*" />
+          <option value="urllib.parse" />
+          <option value="str.append" />
+          <option value="bool.user" />
+          <option value="str.getter" />
+          <option value="str.__setitem__" />
+          <option value="app.schemas.topic.Topic.__getitem__" />
+          <option value="str.__delitem__" />
+          <option value="app.schemas.SanitizedString.validate" />
+          <option value="type._workflow_method" />
+          <option value="app.api.router.data_dashboard.utils.DashboardSortEnum.lookup" />
+          <option value="type.without_ui" />
+          <option value="type.with_ui" />
+          <option value="app.schemas.slack.Channel.__getitem__" />
+          <option value="app.schemas.slack.Channel.__setitem__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,5 +1,6 @@
 import random
 
+from bank.account.current import CurrentAccount
 from bank.account.saving import SavingAccount
 
 
@@ -11,7 +12,7 @@ class Bank(object):
         self.name = None
         pass
 
-    def create_account(self, name: str, type: str, initial_deposit: int, account_number:int):
+    def create_account(self, name: str, type: str, initial_deposit: int, account_number: int):
         # TODO: validation be unique
         self.account_number = account_number
         self.name = name
@@ -20,8 +21,10 @@ class Bank(object):
         if self.type == 'savings':
             self.account = SavingAccount(self.account_number)
             self.account.amount = initial_deposit
+        elif self.type == 'current':
+            self.account = CurrentAccount(self.account_number)
+            self.account.amount = initial_deposit
         return self
-
 
     def get_accont(self, accont_number):
         # try the account
@@ -40,5 +43,5 @@ class Bank(object):
         return {
             'name': self.name,
             'type': self.type,
-            'balance': self.account.amount
+            'balance': self.account.amount or 0
         }

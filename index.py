@@ -14,4 +14,3 @@ if __name__ == '__main__':
     for i in account:
         i: Bank
         print(i.account_info())
-        
